@@ -1,3 +1,5 @@
+import gabrielPhoto from "@/assets/gabriel-tual.jpg";
+
 const About = () => {
   return (
     <section className="py-24 bg-forest text-cream relative overflow-hidden">
@@ -32,15 +34,14 @@ const About = () => {
               </div>
             </div>
             
-            {/* Visual element */}
+            {/* Photo */}
             <div className="order-1 md:order-2 relative">
               <div className="aspect-square bg-cream/10 rounded-sm rotate-3 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <span className="font-display text-8xl text-terracotta block -rotate-6">GT</span>
-                    <span className="text-sm tracking-widest uppercase text-cream/60 mt-4 block">Barcelona • Europe</span>
-                  </div>
-                </div>
+                <img 
+                  src={gabrielPhoto} 
+                  alt="Gabriel Tual" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               {/* Decorative overlay */}
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-terracotta/30 rounded-sm -z-10" />
