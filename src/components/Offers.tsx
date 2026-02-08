@@ -1,27 +1,33 @@
 import { Sprout, Users, Mountain } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const offers = [
   {
     icon: Sprout,
     title: "Growing Food",
     subtitle: "For Farmers",
-    description: "A dedicated track for farmers' needs—from training and technical support to market access and offtake agreements.",
+    description: "A dedicated track for farmers' needs, from training and technical support to market access and offtake agreements.",
+    link: "/growing-food",
   },
   {
     icon: Users,
     title: "Growing Connection",
     subtitle: "For Projects",
     description: "A relationship service to accelerate your regenerative projects by connecting you with the right partners, together.",
+    link: "/growing-connection",
   },
   {
     icon: Mountain,
     title: "Growing Landscape",
     subtitle: "For Regions",
     description: "Strategic support to create landscape-level regeneration projects that transform entire territories.",
+    link: "/growing-landscape",
   },
 ];
 
 const Offers = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-cream relative">
       {/* Decorative strip */}
@@ -42,7 +48,8 @@ const Offers = () => {
             {offers.map((offer, index) => (
               <div 
                 key={offer.title}
-                className="group relative bg-forest text-cream p-8 transition-transform duration-300 hover:-translate-y-2"
+                onClick={() => navigate(offer.link)}
+                className="group relative bg-forest text-cream p-8 transition-all duration-300 hover:-translate-y-2 cursor-pointer"
                 style={{ transform: `rotate(${(index - 1) * -1}deg)` }}
               >
                 {/* Icon */}
@@ -59,6 +66,11 @@ const Offers = () => {
                 </h3>
                 <p className="text-cream/70 leading-relaxed">
                   {offer.description}
+                </p>
+                
+                {/* Hover indicator */}
+                <p className="text-terracotta text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more →
                 </p>
                 
                 {/* Decorative corner */}

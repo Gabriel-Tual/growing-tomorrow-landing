@@ -1,19 +1,23 @@
 import { Users, Link, Sprout } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const steps = [
   {
     icon: Users,
     title: "Emulate",
     subtitle: "Build the Movement",
-    description: "Hosting RegenAg community gatherings at Norrsken Barcelona, creating spaces where regenerative minds meet. Sharing insights through LinkedIn to inspire the next generation of farmers and changemakers.",
+    description: "We create content, curate communities and make sure that regeneration is embodied through our stories.",
     rotation: "-rotate-1",
+    link: "/emulate",
   },
   {
     icon: Link,
     title: "Connect",
     subtitle: "Bridge the Gap",
-    description: "Hundreds of meaningful connections forged between farmers, investors, innovators and policymakers. Each conversation plants a seed for future collaboration.",
+    description: "Creating connections to accelerate impact between different worlds, actively acting as a translating agent for all the doers.",
     rotation: "rotate-1",
+    link: "/connect",
   },
   {
     icon: Sprout,
@@ -21,12 +25,15 @@ const steps = [
     subtitle: "Make it Happen",
     description: "Where strategy meets soil. Turning connections into concrete projects, pilots into programs, and ideas into impact. The magic is just beginning.",
     rotation: "-rotate-1",
+    link: "/do",
   },
 ];
 
 const Process = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section id="process" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-forest/20 via-terracotta/20 to-forest/20" />
       
@@ -59,9 +66,18 @@ const Process = () => {
               <p className="text-terracotta font-medium text-sm mb-4">
                 {step.subtitle}
               </p>
-              <p className="text-earth leading-relaxed">
+              <p className="text-earth leading-relaxed mb-6">
                 {step.description}
               </p>
+              
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-forest text-forest hover:bg-forest hover:text-cream"
+                onClick={() => navigate(step.link)}
+              >
+                Know More
+              </Button>
             </div>
           ))}
         </div>
