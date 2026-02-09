@@ -1,4 +1,5 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import andreinaPhoto from "@/assets/andreina.jfif";
 
 const testimonials = [
   {
@@ -16,8 +17,9 @@ const testimonials = [
   {
     name: "Andreina R.",
     role: "Food Systems Consultant",
-    quote: "The RegenAg community gatherings Gabriel hosts are where real collaborations happen. I've found three project partners there.",
+    quote: "I've had the pleasure of not only working with but also brainstorming and learning from Gabriel. He combines sharp intelligence and efficiency with a rare ability to connect ideas across disciplines and turn them into actionable strategies. Beyond his expertise in sustainability and carbon project development, what truly stands out is his eloquence, adaptability, and genuine kindness. He excels as both an inspiring collaborator and a trusted consultant.",
     initials: "AR",
+    photo: andreinaPhoto,
   },
 ];
 
@@ -54,6 +56,9 @@ const Testimonials = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <Avatar className="h-12 w-12 border-2 border-terracotta/30">
+                    {"photo" in testimonial && testimonial.photo && (
+                      <AvatarImage src={testimonial.photo} alt={testimonial.name} />
+                    )}
                     <AvatarFallback className="bg-terracotta/20 text-cream font-display">
                       {testimonial.initials}
                     </AvatarFallback>
