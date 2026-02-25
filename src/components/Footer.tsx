@@ -1,6 +1,9 @@
 import { Linkedin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-12 bg-forest text-cream">
       <div className="container mx-auto px-6">
@@ -10,7 +13,7 @@ const Footer = () => {
               Growing<span className="text-terracotta">.</span>Tomorrow
             </span>
             <p className="text-cream/60 text-sm mt-1">
-              Scaling regeneration through connection.
+              {t("footer.tagline")}
             </p>
           </div>
           
@@ -30,13 +33,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-cream/60 hover:text-terracotta transition-colors text-sm"
             >
-              Company Page →
+              {t("footer.companyPage")}
             </a>
           </div>
         </div>
         
         <div className="max-w-4xl mx-auto mt-8 pt-8 border-t border-cream/10 text-center text-cream/40 text-sm">
-          © {new Date().getFullYear()} Growing Tomorrow. Cultivating change.
+          © {new Date().getFullYear()} {t("footer.copyright")}
         </div>
       </div>
     </footer>
