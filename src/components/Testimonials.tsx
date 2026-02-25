@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import andreinaPhoto from "@/assets/andreina.jfif";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const testimonials = [
   {
@@ -24,9 +25,10 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 bg-forest text-cream relative overflow-hidden">
-      {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-32 h-32 border border-terracotta/20 rounded-full" />
       <div className="absolute bottom-20 left-10 w-24 h-24 border border-terracotta/20 rounded-full" />
       
@@ -34,10 +36,10 @@ const Testimonials = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-terracotta font-medium tracking-widest uppercase text-sm mb-4">
-              Voices from the Field
+              {t("testimonials.label")}
             </p>
             <h2 className="font-display text-4xl md:text-5xl -rotate-1">
-              What Collaborators Say
+              {t("testimonials.title")}
             </h2>
           </div>
           
