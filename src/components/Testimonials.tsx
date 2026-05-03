@@ -1,13 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import andreinaPhoto from "@/assets/andreina.jfif";
+import noePhoto from "@/assets/noe.jfif";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const testimonials = [
   {
-    name: "Alice H.",
-    role: "Regenerative Farmer, France",
-    quote: "Gabriel connected me with the right investors at the perfect time. His network in the regenerative space is unmatched.",
-    initials: "AH",
+    name: "Noé A.",
+    role: "Norrsken",
+    quote: "I've lost count of the events and initiatives Gabriel and I have collaborated on at Norrsken. As our Regen Champion, he has an absolute superpower: he makes soil health, resilient landscapes, and agriculture genuinely cool. He effortlessly bridges the gap between tech founders and actual farmers, packing rooms with people eager to listen and act. I'm constantly amazed by his mind and his reach. He retains a fascinating amount of knowledge about our ecosystems and has an incredible talent for connecting the exact right people. Yet, despite his deep expertise, he remains incredibly kind, humble, and generous. What truly sets Gabriel apart is his relentless, authentic passion for the earth. It sounds like a cliché, but I genuinely love working and learning alongside him every day. Regeneration is infinite, and so is the work we need to do, there is honestly no better partner to lead that charge.",
+    initials: "NA",
+    photo: noePhoto,
   },
   {
     name: "Alice MN.",

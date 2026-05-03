@@ -13,7 +13,7 @@ export const translations: Record<Language, Record<string, any>> = {
       tagline: "Bioregional Land Stewardship",
       title1: "Growing the next generation of",
       title2: "Land Stewards",
-      subtitle: "Growing Tomorrow rebuilds the ecological and social fabric of our food-producing regions, one bioregion at a time — by mapping territories, securing abandoned land, and onboarding new farmers.",
+      subtitle: "Growing Tomorrow rebuilds the ecological and social fabric of our food-producing regions, one bioregion at a time, by mapping territories, securing abandoned land, and onboarding new farmers.",
       cta: "Discover How",
     },
     process: {
@@ -22,7 +22,7 @@ export const translations: Record<Language, Record<string, any>> = {
       emulate: {
         title: "Understand",
         subtitle: "Bioregional Intelligence",
-        description: "We map bioregions through RegenOS — combining open data, field analysis and local knowledge — to surface the territories where regeneration is both needed and possible.",
+        description: "We map bioregions through RegenOS, combining open data, field analysis and local knowledge, to surface the territories where regeneration is both needed and possible.",
       },
       connect: {
         title: "Secure",
@@ -42,7 +42,7 @@ export const translations: Record<Language, Record<string, any>> = {
       food: {
         title: "Onboarding Farmers",
         subtitle: "For Aspiring Stewards",
-        description: "We install a new generation of farmers on regenerated land — through training, technical support, market access and a path to co-ownership.",
+        description: "We install a new generation of farmers on regenerated land, through training, technical support, market access and a path to co-ownership.",
       },
       connection: {
         title: "Bioregion Intelligence",
@@ -52,7 +52,7 @@ export const translations: Record<Language, Record<string, any>> = {
       landscape: {
         title: "Land Stewardship",
         subtitle: "For Landowners & Investors",
-        description: "We acquire, hold and regenerate abandoned or underutilized farmland through a Transition Land Trust — turning stranded acres into thriving territories.",
+        description: "We acquire, hold and regenerate abandoned or underutilized farmland through a Transition Land Trust, turning stranded acres into thriving territories.",
       },
       learnMore: "Learn more →",
     },
@@ -67,7 +67,7 @@ export const translations: Record<Language, Record<string, any>> = {
     pathway: {
       label: "The Framework",
       title: "What New Farmers Need",
-      subtitle: "Four structural barriers stop aspiring farmers from taking root. Growing Tomorrow is built to remove them — together, at the bioregional scale.",
+      subtitle: "Four structural barriers stop aspiring farmers from taking root. Growing Tomorrow is built to remove them, together, at the bioregional scale.",
       inspiration: {
         title: "Access to Land",
         description: "The single biggest barrier. We acquire abandoned and underutilized farmland and hold it in a Transition Land Trust, so new farmers can start without owning capital from day one.",
@@ -78,7 +78,7 @@ export const translations: Record<Language, Record<string, any>> = {
       },
       capital: {
         title: "Access to Capital",
-        description: "We bridge yield gaps and transition costs by blending subsidies, food-buyer offtake and patient capital — so taking the leap doesn't mean risking everything.",
+        description: "We bridge yield gaps and transition costs by blending subsidies, food-buyer offtake and patient capital, so taking the leap doesn't mean risking everything.",
       },
       market: {
         title: "Access to Market",
@@ -88,9 +88,9 @@ export const translations: Record<Language, Record<string, any>> = {
     about: {
       label: "Founder",
       name: "Gabriel Tual",
-      bio1: "I started Growing Tomorrow after years of asking one stubborn question: who is farming today, and who will tomorrow? The answers — across Europe and Latin America — pointed to a generational renewal crisis hiding in plain sight.",
+      bio1: "I started Growing Tomorrow after years of asking one stubborn question: who is farming today, and who will tomorrow? The answers, across Europe and Latin America, pointed to a generational renewal crisis hiding in plain sight.",
       bio2: "From Fresh Ventures Studio to moderating sessions with Koen van Seijen at Investing in Regenerative Agriculture, and building RegenAg communities across Barcelona, I've spent a decade bridging farmers, funders and food companies. The friction is everywhere; the infrastructure to remove it, almost nowhere.",
-      bio3: "Growing Tomorrow is that infrastructure: a venture that maps bioregions, secures abandoned land, and installs the next generation of stewards on it — one bioregion at a time.",
+      bio3: "Growing Tomorrow is that infrastructure: a venture that maps bioregions, secures abandoned land, and installs the next generation of stewards on it, one bioregion at a time.",
       quote: "\"Less farmers means either consolidation or abandonment. Neither is the future we want. We need a structural anchor that turns dreams into action.\"",
     },
     testimonials: {
@@ -99,7 +99,7 @@ export const translations: Record<Language, Record<string, any>> = {
     },
     cta: {
       title: "Help Us Grow Tomorrow",
-      subtitle: "Whether you're a landowner, an aspiring farmer, a food company seeking resilient supply, or a public actor working at the bioregional scale — let's talk.",
+      subtitle: "Whether you're a landowner, an aspiring farmer, a food company seeking resilient supply, or a public actor working at the bioregional scale, let's talk.",
       button: "Book a 30-min Call",
     },
     footer: {
@@ -114,7 +114,7 @@ export const translations: Record<Language, Record<string, any>> = {
       tagline: "Stewardship Foncier Biorégional",
       title1: "Faire émerger la nouvelle génération de",
       title2: "Gardiens de la Terre",
-      subtitle: "Growing Tomorrow reconstruit le tissu écologique et social de nos régions agricoles, une biorégion à la fois — en cartographiant les territoires, en sécurisant les terres abandonnées et en installant de nouveaux paysans.",
+      subtitle: "Growing Tomorrow reconstruit le tissu écologique et social de nos régions agricoles, une biorégion à la fois, en cartographiant les territoires, en sécurisant les terres abandonnées et en installant de nouveaux paysans.",
       cta: "Découvrir Comment",
     },
     process: {
@@ -123,7 +123,7 @@ export const translations: Record<Language, Record<string, any>> = {
       emulate: {
         title: "Comprendre",
         subtitle: "Intelligence Biorégionale",
-        description: "Nous cartographions les biorégions via RegenOS — données ouvertes, analyse de terrain et savoirs locaux — pour révéler les territoires où la régénération est à la fois nécessaire et possible.",
+        description: "Nous cartographions les biorégions via RegenOS, données ouvertes, analyse de terrain et savoirs locaux, pour révéler les territoires où la régénération est à la fois nécessaire et possible.",
       },
       connect: {
         title: "Sécuriser",
@@ -143,7 +143,7 @@ export const translations: Record<Language, Record<string, any>> = {
       food: {
         title: "Installer des Paysans",
         subtitle: "Pour les Futurs Gardiens",
-        description: "Nous installons une nouvelle génération de paysans sur des terres régénérées — formation, accompagnement technique, accès au marché et chemin vers la copropriété.",
+        description: "Nous installons une nouvelle génération de paysans sur des terres régénérées, formation, accompagnement technique, accès au marché et chemin vers la copropriété.",
       },
       connection: {
         title: "Intelligence Biorégionale",
@@ -153,7 +153,7 @@ export const translations: Record<Language, Record<string, any>> = {
       landscape: {
         title: "Stewardship Foncier",
         subtitle: "Pour Propriétaires & Investisseurs",
-        description: "Nous acquérons, détenons et régénérons des terres abandonnées ou sous-utilisées via un Transition Land Trust — transformant des hectares délaissés en territoires vivants.",
+        description: "Nous acquérons, détenons et régénérons des terres abandonnées ou sous-utilisées via un Transition Land Trust, transformant des hectares délaissés en territoires vivants.",
       },
       learnMore: "En savoir plus →",
     },
@@ -168,7 +168,7 @@ export const translations: Record<Language, Record<string, any>> = {
     pathway: {
       label: "Le Cadre",
       title: "Ce Dont les Nouveaux Paysans Ont Besoin",
-      subtitle: "Quatre barrières structurelles empêchent les futurs paysans de s'enraciner. Growing Tomorrow est conçu pour les lever — à l'échelle biorégionale.",
+      subtitle: "Quatre barrières structurelles empêchent les futurs paysans de s'enraciner. Growing Tomorrow est conçu pour les lever, à l'échelle biorégionale.",
       inspiration: {
         title: "Accès à la Terre",
         description: "La barrière numéro un. Nous acquérons des terres abandonnées et sous-utilisées et les détenons dans un Transition Land Trust, pour que les nouveaux paysans puissent démarrer sans capital.",
@@ -179,7 +179,7 @@ export const translations: Record<Language, Record<string, any>> = {
       },
       capital: {
         title: "Accès au Capital",
-        description: "Nous comblons les écarts de rendement et les coûts de transition en combinant subventions, contrats d'achat et capital patient — pour que le saut ne soit pas un risque total.",
+        description: "Nous comblons les écarts de rendement et les coûts de transition en combinant subventions, contrats d'achat et capital patient, pour que le saut ne soit pas un risque total.",
       },
       market: {
         title: "Accès au Marché",
@@ -189,9 +189,9 @@ export const translations: Record<Language, Record<string, any>> = {
     about: {
       label: "Fondateur",
       name: "Gabriel Tual",
-      bio1: "J'ai lancé Growing Tomorrow après des années à poser une question obstinée : qui cultive aujourd'hui, et qui le fera demain ? Les réponses — en Europe et en Amérique latine — pointent vers une crise du renouvellement générationnel cachée à la vue de tous.",
+      bio1: "J'ai lancé Growing Tomorrow après des années à poser une question obstinée : qui cultive aujourd'hui, et qui le fera demain ? Les réponses, en Europe et en Amérique latine, pointent vers une crise du renouvellement générationnel cachée à la vue de tous.",
       bio2: "De Fresh Ventures Studio à la modération de sessions avec Koen van Seijen chez Investing in Regenerative Agriculture, en passant par les communautés RegenAg à Barcelone, j'ai passé une décennie à relier paysans, financeurs et entreprises alimentaires. La friction est partout ; l'infrastructure pour la lever, presque nulle part.",
-      bio3: "Growing Tomorrow est cette infrastructure : une entreprise qui cartographie les biorégions, sécurise les terres abandonnées et y installe la prochaine génération de gardiens — une biorégion à la fois.",
+      bio3: "Growing Tomorrow est cette infrastructure : une entreprise qui cartographie les biorégions, sécurise les terres abandonnées et y installe la prochaine génération de gardiens, une biorégion à la fois.",
       quote: "\"Moins de paysans, c'est soit la concentration, soit l'abandon. Aucun de ces futurs ne nous convient. Il nous faut un point d'ancrage structurel pour transformer les rêves en actions.\"",
     },
     testimonials: {
@@ -200,7 +200,7 @@ export const translations: Record<Language, Record<string, any>> = {
     },
     cta: {
       title: "Aidez-nous à Cultiver Demain",
-      subtitle: "Que vous soyez propriétaire foncier, futur paysan, entreprise alimentaire en quête de résilience ou acteur public à l'échelle biorégionale — parlons-en.",
+      subtitle: "Que vous soyez propriétaire foncier, futur paysan, entreprise alimentaire en quête de résilience ou acteur public à l'échelle biorégionale, parlons-en.",
       button: "Réserver un Appel de 30 min",
     },
     footer: {
@@ -215,7 +215,7 @@ export const translations: Record<Language, Record<string, any>> = {
       tagline: "Custodia de la Tierra Biorregional",
       title1: "Haciendo crecer la nueva generación de",
       title2: "Custodios de la Tierra",
-      subtitle: "Growing Tomorrow reconstruye el tejido ecológico y social de nuestras regiones agrícolas, una biorregión a la vez — mapeando territorios, asegurando tierras abandonadas e instalando nuevos agricultores.",
+      subtitle: "Growing Tomorrow reconstruye el tejido ecológico y social de nuestras regiones agrícolas, una biorregión a la vez, mapeando territorios, asegurando tierras abandonadas e instalando nuevos agricultores.",
       cta: "Descubrir Cómo",
     },
     process: {
@@ -224,7 +224,7 @@ export const translations: Record<Language, Record<string, any>> = {
       emulate: {
         title: "Comprender",
         subtitle: "Inteligencia Biorregional",
-        description: "Mapeamos biorregiones con RegenOS — datos abiertos, análisis de campo y conocimiento local — para revelar los territorios donde la regeneración es necesaria y posible.",
+        description: "Mapeamos biorregiones con RegenOS, datos abiertos, análisis de campo y conocimiento local, para revelar los territorios donde la regeneración es necesaria y posible.",
       },
       connect: {
         title: "Asegurar",
@@ -244,7 +244,7 @@ export const translations: Record<Language, Record<string, any>> = {
       food: {
         title: "Instalar Agricultores",
         subtitle: "Para Futuros Custodios",
-        description: "Instalamos una nueva generación de agricultores en tierras regeneradas — formación, soporte técnico, acceso al mercado y un camino hacia la copropiedad.",
+        description: "Instalamos una nueva generación de agricultores en tierras regeneradas, formación, soporte técnico, acceso al mercado y un camino hacia la copropiedad.",
       },
       connection: {
         title: "Inteligencia Biorregional",
@@ -254,7 +254,7 @@ export const translations: Record<Language, Record<string, any>> = {
       landscape: {
         title: "Custodia de Tierras",
         subtitle: "Para Propietarios e Inversores",
-        description: "Adquirimos, mantenemos y regeneramos tierras abandonadas o subutilizadas a través de un Transition Land Trust — convirtiendo hectáreas olvidadas en territorios vivos.",
+        description: "Adquirimos, mantenemos y regeneramos tierras abandonadas o subutilizadas a través de un Transition Land Trust, convirtiendo hectáreas olvidadas en territorios vivos.",
       },
       learnMore: "Saber más →",
     },
@@ -269,7 +269,7 @@ export const translations: Record<Language, Record<string, any>> = {
     pathway: {
       label: "El Marco",
       title: "Lo Que Necesitan los Nuevos Agricultores",
-      subtitle: "Cuatro barreras estructurales impiden que los futuros agricultores echen raíces. Growing Tomorrow está diseñado para eliminarlas — a escala biorregional.",
+      subtitle: "Cuatro barreras estructurales impiden que los futuros agricultores echen raíces. Growing Tomorrow está diseñado para eliminarlas, a escala biorregional.",
       inspiration: {
         title: "Acceso a la Tierra",
         description: "La mayor barrera. Adquirimos tierras abandonadas y subutilizadas y las mantenemos en un Transition Land Trust, para que los nuevos agricultores puedan empezar sin capital propio.",
@@ -280,7 +280,7 @@ export const translations: Record<Language, Record<string, any>> = {
       },
       capital: {
         title: "Acceso al Capital",
-        description: "Cubrimos brechas de rendimiento y costes de transición combinando subsidios, contratos de compra y capital paciente — para que dar el salto no signifique arriesgarlo todo.",
+        description: "Cubrimos brechas de rendimiento y costes de transición combinando subsidios, contratos de compra y capital paciente, para que dar el salto no signifique arriesgarlo todo.",
       },
       market: {
         title: "Acceso al Mercado",
@@ -290,9 +290,9 @@ export const translations: Record<Language, Record<string, any>> = {
     about: {
       label: "Fundador",
       name: "Gabriel Tual",
-      bio1: "Lancé Growing Tomorrow después de años haciendo una pregunta obstinada: ¿quién cultiva hoy y quién lo hará mañana? Las respuestas — en Europa y América Latina — apuntan a una crisis de relevo generacional oculta a plena vista.",
+      bio1: "Lancé Growing Tomorrow después de años haciendo una pregunta obstinada: ¿quién cultiva hoy y quién lo hará mañana? Las respuestas, en Europa y América Latina, apuntan a una crisis de relevo generacional oculta a plena vista.",
       bio2: "Desde Fresh Ventures Studio hasta moderar sesiones con Koen van Seijen en Investing in Regenerative Agriculture, pasando por las comunidades RegenAg en Barcelona, he pasado una década conectando agricultores, inversores y empresas alimentarias. La fricción está en todas partes; la infraestructura para resolverla, casi en ninguna.",
-      bio3: "Growing Tomorrow es esa infraestructura: una empresa que mapea biorregiones, asegura tierras abandonadas e instala en ellas a la próxima generación de custodios — una biorregión a la vez.",
+      bio3: "Growing Tomorrow es esa infraestructura: una empresa que mapea biorregiones, asegura tierras abandonadas e instala en ellas a la próxima generación de custodios, una biorregión a la vez.",
       quote: "\"Menos agricultores significa concentración o abandono. Ninguno es el futuro que queremos. Necesitamos un anclaje estructural que convierta los sueños en acción.\"",
     },
     testimonials: {
@@ -301,7 +301,7 @@ export const translations: Record<Language, Record<string, any>> = {
     },
     cta: {
       title: "Ayúdanos a Cultivar el Mañana",
-      subtitle: "Ya seas propietario de tierras, futuro agricultor, empresa alimentaria buscando resiliencia o actor público a escala biorregional — hablemos.",
+      subtitle: "Ya seas propietario de tierras, futuro agricultor, empresa alimentaria buscando resiliencia o actor público a escala biorregional, hablemos.",
       button: "Reservar una Llamada de 30 min",
     },
     footer: {

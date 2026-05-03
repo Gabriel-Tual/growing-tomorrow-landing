@@ -32,10 +32,6 @@ const Hero = () => {
             <span className="block italic text-terracotta rotate-1">{t("hero.title2")}</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-cream/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            {t("hero.subtitle")}
-          </p>
-          
           <Button 
             variant="hero" 
             size="lg" 
