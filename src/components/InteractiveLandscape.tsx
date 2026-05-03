@@ -49,10 +49,10 @@ const InteractiveLandscape = () => {
             </p>
           </div>
 
-          <div className="relative flex justify-center">
+          <div className="relative flex flex-col items-center">
             <svg
               viewBox="0 0 600 600"
-              className="w-full max-w-lg"
+              className="w-full max-w-lg h-auto"
               style={{ filter: "drop-shadow(0 4px 20px rgba(0,0,0,0.1))" }}
             >
               {/* Main landscape circle */}
@@ -111,28 +111,28 @@ const InteractiveLandscape = () => {
               ))}
 
               {/* Labels */}
-              <text x="300" y="510" textAnchor="middle" fill="hsl(16, 65%, 50%)" fontSize="14" fontWeight="600" className="pointer-events-none uppercase tracking-wider" letterSpacing="2">
+              <text x="300" y="570" textAnchor="middle" fill="hsl(16, 65%, 50%)" fontSize="20" fontWeight="600" className="pointer-events-none uppercase" letterSpacing="2">
                 {elements.landscape.label}
               </text>
             </svg>
 
             {/* Legend */}
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-8 flex-wrap">
+            <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-6 flex-wrap w-full">
               {(["landscape", "farms", "community"] as const).map((key) => (
                 <button
                   key={key}
-                  className={`flex items-center gap-2 text-sm transition-all duration-300 cursor-pointer ${
-                    hovered === key ? "scale-110 font-semibold" : "opacity-70 hover:opacity-100"
+                  className={`flex items-center gap-2 text-xs sm:text-sm transition-all duration-300 cursor-pointer ${
+                    hovered === key ? "sm:scale-110 font-semibold" : "opacity-70 hover:opacity-100"
                   }`}
                   onMouseEnter={() => setHovered(key)}
                   onMouseLeave={() => setHovered(null)}
                   onClick={() => navigate(elements[key].link)}
                 >
                   <span
-                    className="w-4 h-4 rounded-full border-2 border-forest/20"
+                    className="w-4 h-4 rounded-full border-2 border-forest/20 flex-shrink-0"
                     style={{ backgroundColor: elements[key].color }}
                   />
-                  <span className="text-forest">
+                  <span className="text-forest text-left">
                     {elements[key].label} → {elements[key].offer}
                   </span>
                 </button>
