@@ -154,7 +154,7 @@ export const translations: Record<Language, Record<string, any>> = {
         vines: "Regenerative vineyard with cover crops",
       },
     },
-    landscapes: {
+    bioregions: {
       hero: {
         label: "Bioregion Atlas",
         title: "Our Landscapes",
