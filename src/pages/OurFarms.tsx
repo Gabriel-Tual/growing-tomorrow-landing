@@ -46,6 +46,13 @@ const OurFarms = () => {
               {t("farms.hero.title")}
             </h1>
             <p className="text-cream/80 mt-3 max-w-2xl">{t("farms.hero.tagline")}</p>
+            <div className="mt-6">
+              <a href="https://calendly.com/gabriel-tual/30min" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-terracotta hover:bg-terracotta/90 text-cream">
+                  {t("farms.cta.button")}
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
