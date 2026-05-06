@@ -154,8 +154,64 @@ export const translations: Record<Language, Record<string, any>> = {
         vines: "Regenerative vineyard with cover crops",
       },
     },
-  },
-  fr: {
+    landscapes: {
+      hero: {
+        label: "Bioregion Atlas",
+        title: "Our Landscapes",
+        subtitle: "Two pilot bioregions where we map, secure and steward land. Click a pin to dive into the territory.",
+      },
+      catalunya: {
+        name: "Penedès, Catalunya",
+        country: "Spain",
+        intro: "An historic Mediterranean wine bioregion between Barcelona and the sea, shaped by limestone hills, dryland viticulture and a thousand-year-old masia culture, now facing generational and climatic transition.",
+        population: "≈ 110,000 inhabitants across the Alt and Baix Penedès",
+        economy: "Wine and cava (DO Penedès, DO Cava), tourism, light industry, food logistics",
+        watershed: "Foix and Anoia rivers, draining to the Mediterranean",
+        agriculture: "≈ 25,000 ha of vineyards, almonds, olives, cereals",
+        watershedDetail: "The Foix and Anoia basins are increasingly stressed by drought cycles. Reservoirs sit below 30% in dry years, and groundwater is overdrawn for irrigation. Restoring soil sponge capacity through cover crops and agroforestry is the most leveraged climate adaptation in the bioregion.",
+        challenges: {
+          c1: "Average grower age above 60, with few successors and rising land abandonment in marginal vineyards.",
+          c2: "Recurring multi-year droughts and warming nights pushing classic varieties out of balance.",
+          c3: "Vineyard monoculture has eroded soils and biodiversity, leaving the landscape brittle.",
+        },
+        opportunities: {
+          o1: "Strong, paying offtake from Barcelona's regenerative restaurants, cava houses and food brands.",
+          o2: "Growing pool of new entrants trained at Catalan agroecology schools looking for land.",
+          o3: "Public co-funding via the Generalitat's land bank and EU CAP eco-schemes.",
+        },
+      },
+      cordoba: {
+        name: "Córdoba, Argentina",
+        country: "Argentina",
+        intro: "A vast central-Argentine bioregion of sierras, native Chaco Serrano forest and fertile pampa fringes. Ground zero of South America's commodity-grain expansion, and one of its most strategic restoration frontiers.",
+        population: "≈ 3.8 million inhabitants in Córdoba province",
+        economy: "Soy, maize, cattle, agro-industry, automotive, software hub in Córdoba city",
+        watershed: "Río Suquía, Río Tercero, Mar Chiquita endorheic basin",
+        agriculture: "≈ 7 million ha cropped, mostly soy and maize, plus extensive cattle",
+        watershedDetail: "Headwaters in the Sierras feed reservoirs supplying Córdoba city and irrigated agriculture downstream. Deforestation of Chaco Serrano has accelerated runoff, sedimentation and flash floods, while the Mar Chiquita salt lake is shrinking from upstream water diversion.",
+        challenges: {
+          c1: "Loss of more than 90% of original native forest, driving erosion and biodiversity collapse.",
+          c2: "Soil organic matter halved in three decades of soy-maize rotations on rented land.",
+          c3: "Concentration of land ownership pushes out small and mid-scale farmers.",
+        },
+        opportunities: {
+          o1: "Pioneer regenerative grain and beef networks already supplying European and local buyers.",
+          o2: "Active research ecosystem (INTA, UNC) and farmer movements like Aapresid pushing for soil-first agriculture.",
+          o3: "Underused pasture and degraded cropland available at accessible land prices for transition projects.",
+        },
+      },
+      stats: {
+        population: "Population",
+        economy: "Economy",
+        watershed: "Watershed",
+        agriculture: "Agriculture",
+      },
+      sections: {
+        challenges: "Key Challenges",
+        opportunities: "Levers for Regeneration",
+        watershed: "Watershed & Water",
+      },
+    },
     header: { cta: "Nous Contacter", ourFarms: "Nos Fermes", ourLandscapes: "Nos Paysages" },
     hero: {
       tagline: "Stewardship Foncier Biorégional",
