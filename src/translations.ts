@@ -8,7 +8,7 @@ export const languageLabels: Record<Language, string> = {
 
 export const translations: Record<Language, Record<string, any>> = {
   en: {
-    header: { cta: "Get in Touch" },
+    header: { cta: "Get in Touch", ourFarms: "Our Farms", ourLandscapes: "Our Landscapes" },
     hero: {
       tagline: "Bioregional Land Stewardship",
       title1: "Growing the next generation of",
@@ -154,9 +154,67 @@ export const translations: Record<Language, Record<string, any>> = {
         vines: "Regenerative vineyard with cover crops",
       },
     },
+    bioregions: {
+      hero: {
+        label: "Bioregion Atlas",
+        title: "Our Landscapes",
+        subtitle: "Two pilot bioregions where we map, secure and steward land. Click a pin to dive into the territory.",
+      },
+      catalunya: {
+        name: "Penedès, Catalunya",
+        country: "Spain",
+        intro: "An historic Mediterranean wine bioregion between Barcelona and the sea, shaped by limestone hills, dryland viticulture and a thousand-year-old masia culture, now facing generational and climatic transition.",
+        population: "≈ 110,000 inhabitants across the Alt and Baix Penedès",
+        economy: "Wine and cava (DO Penedès, DO Cava), tourism, light industry, food logistics",
+        watershed: "Foix and Anoia rivers, draining to the Mediterranean",
+        agriculture: "≈ 25,000 ha of vineyards, almonds, olives, cereals",
+        watershedDetail: "The Foix and Anoia basins are increasingly stressed by drought cycles. Reservoirs sit below 30% in dry years, and groundwater is overdrawn for irrigation. Restoring soil sponge capacity through cover crops and agroforestry is the most leveraged climate adaptation in the bioregion.",
+        challenges: {
+          c1: "Average grower age above 60, with few successors and rising land abandonment in marginal vineyards.",
+          c2: "Recurring multi-year droughts and warming nights pushing classic varieties out of balance.",
+          c3: "Vineyard monoculture has eroded soils and biodiversity, leaving the landscape brittle.",
+        },
+        opportunities: {
+          o1: "Strong, paying offtake from Barcelona's regenerative restaurants, cava houses and food brands.",
+          o2: "Growing pool of new entrants trained at Catalan agroecology schools looking for land.",
+          o3: "Public co-funding via the Generalitat's land bank and EU CAP eco-schemes.",
+        },
+      },
+      cordoba: {
+        name: "Córdoba, Argentina",
+        country: "Argentina",
+        intro: "A vast central-Argentine bioregion of sierras, native Chaco Serrano forest and fertile pampa fringes. Ground zero of South America's commodity-grain expansion, and one of its most strategic restoration frontiers.",
+        population: "≈ 3.8 million inhabitants in Córdoba province",
+        economy: "Soy, maize, cattle, agro-industry, automotive, software hub in Córdoba city",
+        watershed: "Río Suquía, Río Tercero, Mar Chiquita endorheic basin",
+        agriculture: "≈ 7 million ha cropped, mostly soy and maize, plus extensive cattle",
+        watershedDetail: "Headwaters in the Sierras feed reservoirs supplying Córdoba city and irrigated agriculture downstream. Deforestation of Chaco Serrano has accelerated runoff, sedimentation and flash floods, while the Mar Chiquita salt lake is shrinking from upstream water diversion.",
+        challenges: {
+          c1: "Loss of more than 90% of original native forest, driving erosion and biodiversity collapse.",
+          c2: "Soil organic matter halved in three decades of soy-maize rotations on rented land.",
+          c3: "Concentration of land ownership pushes out small and mid-scale farmers.",
+        },
+        opportunities: {
+          o1: "Pioneer regenerative grain and beef networks already supplying European and local buyers.",
+          o2: "Active research ecosystem (INTA, UNC) and farmer movements like Aapresid pushing for soil-first agriculture.",
+          o3: "Underused pasture and degraded cropland available at accessible land prices for transition projects.",
+        },
+      },
+      stats: {
+        population: "Population",
+        economy: "Economy",
+        watershed: "Watershed",
+        agriculture: "Agriculture",
+      },
+      sections: {
+        challenges: "Key Challenges",
+        opportunities: "Levers for Regeneration",
+        watershed: "Watershed & Water",
+      },
+    },
   },
   fr: {
-    header: { cta: "Nous Contacter" },
+    header: { cta: "Nous Contacter", ourFarms: "Nos Fermes", ourLandscapes: "Nos Paysages" },
     hero: {
       tagline: "Stewardship Foncier Biorégional",
       title1: "Faire émerger la nouvelle génération de",
@@ -302,9 +360,67 @@ export const translations: Record<Language, Record<string, any>> = {
         vines: "Vignoble régénératif avec couverts végétaux",
       },
     },
+    bioregions: {
+      hero: {
+        label: "Atlas Biorégional",
+        title: "Nos Paysages",
+        subtitle: "Deux biorégions pilotes où nous cartographions, sécurisons et régénérons la terre. Cliquez sur un point pour explorer.",
+      },
+      catalunya: {
+        name: "Penedès, Catalogne",
+        country: "Espagne",
+        intro: "Une biorégion viticole méditerranéenne historique entre Barcelone et la mer, façonnée par les collines calcaires, la viticulture en sec et une culture millénaire du mas, en pleine transition générationnelle et climatique.",
+        population: "≈ 110 000 habitants entre l'Alt et le Baix Penedès",
+        economy: "Vin et cava (DO Penedès, DO Cava), tourisme, industrie légère, logistique alimentaire",
+        watershed: "Rivières Foix et Anoia, débouchant en Méditerranée",
+        agriculture: "≈ 25 000 ha de vignes, amandiers, oliviers, céréales",
+        watershedDetail: "Les bassins du Foix et de l'Anoia sont de plus en plus stressés par les sécheresses. Les retenues tombent sous 30 % en année sèche, et les nappes sont surexploitées pour l'irrigation. Restaurer la capacité éponge des sols par couverts et agroforesterie est l'adaptation la plus puissante de la biorégion.",
+        challenges: {
+          c1: "Âge moyen des viticulteurs supérieur à 60 ans, peu de successeurs et abandon croissant des vignes marginales.",
+          c2: "Sécheresses pluriannuelles et nuits qui se réchauffent, déséquilibrant les cépages classiques.",
+          c3: "La monoculture viticole a érodé sols et biodiversité, fragilisant le paysage.",
+        },
+        opportunities: {
+          o1: "Demande forte et solvable des restaurants régénératifs, maisons de cava et marques alimentaires de Barcelone.",
+          o2: "Vivier croissant de nouveaux installés formés dans les écoles d'agroécologie catalanes.",
+          o3: "Cofinancement public via la banque foncière de la Generalitat et les éco-régimes de la PAC.",
+        },
+      },
+      cordoba: {
+        name: "Córdoba, Argentine",
+        country: "Argentine",
+        intro: "Vaste biorégion du centre argentin, entre sierras, forêt native du Chaco Serrano et marges fertiles de la pampa. Épicentre de l'expansion céréalière sud-américaine, et l'une de ses frontières de restauration les plus stratégiques.",
+        population: "≈ 3,8 millions d'habitants dans la province de Córdoba",
+        economy: "Soja, maïs, élevage bovin, agro-industrie, automobile, hub logiciel à Córdoba ville",
+        watershed: "Río Suquía, Río Tercero, bassin endoréique de la Mar Chiquita",
+        agriculture: "≈ 7 millions d'ha cultivés, soja et maïs majoritaires, élevage extensif",
+        watershedDetail: "Les sources des Sierras alimentent les retenues qui approvisionnent la ville de Córdoba et l'agriculture irriguée en aval. La déforestation du Chaco Serrano accélère ruissellement, sédimentation et crues éclairs, tandis que la Mar Chiquita rétrécit sous l'effet des prélèvements amont.",
+        challenges: {
+          c1: "Plus de 90 % de la forêt native originelle perdue, érosion et effondrement de la biodiversité.",
+          c2: "Matière organique des sols divisée par deux en trente ans de rotations soja-maïs sur terres louées.",
+          c3: "Concentration de la propriété foncière qui évince les petits et moyens paysans.",
+        },
+        opportunities: {
+          o1: "Filières pionnières de céréales et viande régénératives déjà fournissant l'Europe et le marché local.",
+          o2: "Écosystème de recherche actif (INTA, UNC) et mouvements paysans comme Aapresid, axés sur la santé des sols.",
+          o3: "Pâturages sous-utilisés et terres dégradées disponibles à des prix accessibles pour des projets de transition.",
+        },
+      },
+      stats: {
+        population: "Population",
+        economy: "Économie",
+        watershed: "Bassin versant",
+        agriculture: "Agriculture",
+      },
+      sections: {
+        challenges: "Défis Clés",
+        opportunities: "Leviers de Régénération",
+        watershed: "Bassin Versant & Eau",
+      },
+    },
   },
   es: {
-    header: { cta: "Contáctanos" },
+    header: { cta: "Contáctanos", ourFarms: "Nuestras Fincas", ourLandscapes: "Nuestros Paisajes" },
     hero: {
       tagline: "Custodia de la Tierra Biorregional",
       title1: "Haciendo crecer la nueva generación de",
@@ -448,6 +564,64 @@ export const translations: Record<Language, Record<string, any>> = {
       images: {
         masia: "Masía de piedra",
         vines: "Viñedo regenerativo con cubiertas vegetales",
+      },
+    },
+    bioregions: {
+      hero: {
+        label: "Atlas Biorregional",
+        title: "Nuestros Paisajes",
+        subtitle: "Dos biorregiones piloto donde mapeamos, aseguramos y custodiamos la tierra. Haz clic en un punto para explorar.",
+      },
+      catalunya: {
+        name: "Penedès, Catalunya",
+        country: "España",
+        intro: "Una biorregión vitivinícola mediterránea histórica entre Barcelona y el mar, moldeada por colinas calcáreas, viticultura en secano y una cultura milenaria de masías, hoy en plena transición generacional y climática.",
+        population: "≈ 110 000 habitantes entre el Alt y el Baix Penedès",
+        economy: "Vino y cava (DO Penedès, DO Cava), turismo, industria ligera, logística alimentaria",
+        watershed: "Ríos Foix y Anoia, que desembocan en el Mediterráneo",
+        agriculture: "≈ 25 000 ha de viñedos, almendros, olivos, cereales",
+        watershedDetail: "Las cuencas del Foix y el Anoia están cada vez más estresadas por la sequía. Los embalses bajan del 30 % en años secos y los acuíferos están sobreexplotados para riego. Restaurar la capacidad de esponja del suelo con cubiertas y agroforestería es la adaptación climática más potente.",
+        challenges: {
+          c1: "Edad media de los viticultores por encima de 60 años, con pocos relevos y abandono creciente de viñas marginales.",
+          c2: "Sequías plurianuales y noches más cálidas que descompensan las variedades clásicas.",
+          c3: "El monocultivo viticola ha erosionado suelos y biodiversidad, dejando un paisaje frágil.",
+        },
+        opportunities: {
+          o1: "Demanda solvente de restaurantes regenerativos, cavas y marcas alimentarias de Barcelona.",
+          o2: "Vivero creciente de nuevos entrantes formados en escuelas de agroecología catalanas.",
+          o3: "Cofinanciación pública vía banco de tierras de la Generalitat y eco-regímenes de la PAC.",
+        },
+      },
+      cordoba: {
+        name: "Córdoba, Argentina",
+        country: "Argentina",
+        intro: "Vasta biorregión del centro argentino, entre sierras, bosque nativo del Chaco Serrano y bordes fértiles de la pampa. Epicentro de la expansión de granos sudamericana y una de sus fronteras de restauración más estratégicas.",
+        population: "≈ 3,8 millones de habitantes en la provincia de Córdoba",
+        economy: "Soja, maíz, ganadería, agroindustria, automotriz, polo de software en la ciudad de Córdoba",
+        watershed: "Río Suquía, Río Tercero, cuenca endorreica de Mar Chiquita",
+        agriculture: "≈ 7 millones de ha cultivadas, sobre todo soja y maíz, más ganadería extensiva",
+        watershedDetail: "Las cabeceras de las Sierras alimentan los embalses que abastecen a la ciudad de Córdoba y a la agricultura de riego aguas abajo. La deforestación del Chaco Serrano acelera escorrentía, sedimentación e inundaciones, mientras Mar Chiquita se reduce por las extracciones aguas arriba.",
+        challenges: {
+          c1: "Pérdida de más del 90 % del bosque nativo original, erosión y colapso de la biodiversidad.",
+          c2: "Materia orgánica del suelo reducida a la mitad en tres décadas de rotaciones soja-maíz en tierras alquiladas.",
+          c3: "Concentración de la propiedad de la tierra que desplaza a pequeños y medianos productores.",
+        },
+        opportunities: {
+          o1: "Redes pioneras de granos y carne regenerativos que ya abastecen a compradores europeos y locales.",
+          o2: "Ecosistema activo de investigación (INTA, UNC) y movimientos como Aapresid centrados en la salud del suelo.",
+          o3: "Pasturas subutilizadas y tierras degradadas disponibles a precios accesibles para proyectos de transición.",
+        },
+      },
+      stats: {
+        population: "Población",
+        economy: "Economía",
+        watershed: "Cuenca",
+        agriculture: "Agricultura",
+      },
+      sections: {
+        challenges: "Desafíos Clave",
+        opportunities: "Palancas de Regeneración",
+        watershed: "Cuenca y Agua",
       },
     },
   },
