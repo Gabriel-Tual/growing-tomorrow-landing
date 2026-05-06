@@ -566,5 +566,63 @@ export const translations: Record<Language, Record<string, any>> = {
         vines: "Viñedo regenerativo con cubiertas vegetales",
       },
     },
+    bioregions: {
+      hero: {
+        label: "Atlas Biorregional",
+        title: "Nuestros Paisajes",
+        subtitle: "Dos biorregiones piloto donde mapeamos, aseguramos y custodiamos la tierra. Haz clic en un punto para explorar.",
+      },
+      catalunya: {
+        name: "Penedès, Catalunya",
+        country: "España",
+        intro: "Una biorregión vitivinícola mediterránea histórica entre Barcelona y el mar, moldeada por colinas calcáreas, viticultura en secano y una cultura milenaria de masías, hoy en plena transición generacional y climática.",
+        population: "≈ 110 000 habitantes entre el Alt y el Baix Penedès",
+        economy: "Vino y cava (DO Penedès, DO Cava), turismo, industria ligera, logística alimentaria",
+        watershed: "Ríos Foix y Anoia, que desembocan en el Mediterráneo",
+        agriculture: "≈ 25 000 ha de viñedos, almendros, olivos, cereales",
+        watershedDetail: "Las cuencas del Foix y el Anoia están cada vez más estresadas por la sequía. Los embalses bajan del 30 % en años secos y los acuíferos están sobreexplotados para riego. Restaurar la capacidad de esponja del suelo con cubiertas y agroforestería es la adaptación climática más potente.",
+        challenges: {
+          c1: "Edad media de los viticultores por encima de 60 años, con pocos relevos y abandono creciente de viñas marginales.",
+          c2: "Sequías plurianuales y noches más cálidas que descompensan las variedades clásicas.",
+          c3: "El monocultivo viticola ha erosionado suelos y biodiversidad, dejando un paisaje frágil.",
+        },
+        opportunities: {
+          o1: "Demanda solvente de restaurantes regenerativos, cavas y marcas alimentarias de Barcelona.",
+          o2: "Vivero creciente de nuevos entrantes formados en escuelas de agroecología catalanas.",
+          o3: "Cofinanciación pública vía banco de tierras de la Generalitat y eco-regímenes de la PAC.",
+        },
+      },
+      cordoba: {
+        name: "Córdoba, Argentina",
+        country: "Argentina",
+        intro: "Vasta biorregión del centro argentino, entre sierras, bosque nativo del Chaco Serrano y bordes fértiles de la pampa. Epicentro de la expansión de granos sudamericana y una de sus fronteras de restauración más estratégicas.",
+        population: "≈ 3,8 millones de habitantes en la provincia de Córdoba",
+        economy: "Soja, maíz, ganadería, agroindustria, automotriz, polo de software en la ciudad de Córdoba",
+        watershed: "Río Suquía, Río Tercero, cuenca endorreica de Mar Chiquita",
+        agriculture: "≈ 7 millones de ha cultivadas, sobre todo soja y maíz, más ganadería extensiva",
+        watershedDetail: "Las cabeceras de las Sierras alimentan los embalses que abastecen a la ciudad de Córdoba y a la agricultura de riego aguas abajo. La deforestación del Chaco Serrano acelera escorrentía, sedimentación e inundaciones, mientras Mar Chiquita se reduce por las extracciones aguas arriba.",
+        challenges: {
+          c1: "Pérdida de más del 90 % del bosque nativo original, erosión y colapso de la biodiversidad.",
+          c2: "Materia orgánica del suelo reducida a la mitad en tres décadas de rotaciones soja-maíz en tierras alquiladas.",
+          c3: "Concentración de la propiedad de la tierra que desplaza a pequeños y medianos productores.",
+        },
+        opportunities: {
+          o1: "Redes pioneras de granos y carne regenerativos que ya abastecen a compradores europeos y locales.",
+          o2: "Ecosistema activo de investigación (INTA, UNC) y movimientos como Aapresid centrados en la salud del suelo.",
+          o3: "Pasturas subutilizadas y tierras degradadas disponibles a precios accesibles para proyectos de transición.",
+        },
+      },
+      stats: {
+        population: "Población",
+        economy: "Economía",
+        watershed: "Cuenca",
+        agriculture: "Agricultura",
+      },
+      sections: {
+        challenges: "Desafíos Clave",
+        opportunities: "Palancas de Regeneración",
+        watershed: "Cuenca y Agua",
+      },
+    },
   },
 };
