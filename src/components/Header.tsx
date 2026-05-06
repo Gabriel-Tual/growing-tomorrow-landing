@@ -10,13 +10,21 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-forest/10">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          <a href="/" className="font-display text-2xl text-forest hover:text-terracotta transition-colors">
+        <div className="flex items-center justify-between h-16 gap-4">
+          <a href="/" className="font-display text-xl md:text-2xl text-forest hover:text-terracotta transition-colors whitespace-nowrap">
             Growing<span className="text-terracotta">.</span>Tomorrow
           </a>
-          
-          <div className="flex items-center gap-4">
-            {/* Language switcher */}
+
+          <nav className="hidden md:flex items-center gap-6 text-sm">
+            <a href="/our-farms" className="text-forest hover:text-terracotta transition-colors">
+              {t("header.ourFarms")}
+            </a>
+            <a href="/our-landscapes" className="text-forest hover:text-terracotta transition-colors">
+              {t("header.ourLandscapes")}
+            </a>
+          </nav>
+
+          <div className="flex items-center gap-3">
             <div className="flex items-center gap-1 border border-forest/20 rounded-sm overflow-hidden">
               {languages.map((lang) => (
                 <button
@@ -33,9 +41,9 @@ const Header = () => {
               ))}
             </div>
 
-            <a 
-              href="https://calendly.com/gabriel-tual/30min" 
-              target="_blank" 
+            <a
+              href="https://calendly.com/gabriel-tual/30min"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant="outline" size="sm" className="border-forest text-forest hover:bg-forest hover:text-cream">
@@ -44,6 +52,14 @@ const Header = () => {
             </a>
           </div>
         </div>
+        <nav className="md:hidden flex items-center gap-5 pb-3 text-sm">
+          <a href="/our-farms" className="text-forest hover:text-terracotta transition-colors">
+            {t("header.ourFarms")}
+          </a>
+          <a href="/our-landscapes" className="text-forest hover:text-terracotta transition-colors">
+            {t("header.ourLandscapes")}
+          </a>
+        </nav>
       </div>
     </header>
   );
