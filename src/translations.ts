@@ -212,6 +212,8 @@ export const translations: Record<Language, Record<string, any>> = {
         watershed: "Watershed & Water",
       },
     },
+  },
+  fr: {
     header: { cta: "Nous Contacter", ourFarms: "Nos Fermes", ourLandscapes: "Nos Paysages" },
     hero: {
       tagline: "Stewardship Foncier Biorégional",
