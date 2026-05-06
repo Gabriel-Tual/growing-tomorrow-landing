@@ -18,6 +18,12 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center gap-6">
+            <a
+              href="/our-farms"
+              className="text-cream/70 hover:text-terracotta transition-colors text-sm"
+            >
+              {t("footer.ourFarms")}
+            </a>
             <a 
               href="https://www.linkedin.com/in/gabriel-tual/" 
               target="_blank" 
