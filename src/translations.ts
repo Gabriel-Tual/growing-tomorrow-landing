@@ -8,7 +8,7 @@ export const languageLabels: Record<Language, string> = {
 
 export const translations: Record<Language, Record<string, any>> = {
   en: {
-    header: { cta: "Get in Touch" },
+    header: { cta: "Get in Touch", ourFarms: "Our Farms", ourLandscapes: "Our Landscapes" },
     hero: {
       tagline: "Bioregional Land Stewardship",
       title1: "Growing the next generation of",
@@ -156,7 +156,7 @@ export const translations: Record<Language, Record<string, any>> = {
     },
   },
   fr: {
-    header: { cta: "Nous Contacter" },
+    header: { cta: "Nous Contacter", ourFarms: "Nos Fermes", ourLandscapes: "Nos Paysages" },
     hero: {
       tagline: "Stewardship Foncier Biorégional",
       title1: "Faire émerger la nouvelle génération de",
@@ -304,7 +304,7 @@ export const translations: Record<Language, Record<string, any>> = {
     },
   },
   es: {
-    header: { cta: "Contáctanos" },
+    header: { cta: "Contáctanos", ourFarms: "Nuestras Fincas", ourLandscapes: "Nuestros Paisajes" },
     hero: {
       tagline: "Custodia de la Tierra Biorregional",
       title1: "Haciendo crecer la nueva generación de",
