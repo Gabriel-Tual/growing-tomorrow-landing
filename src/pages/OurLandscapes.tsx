@@ -10,8 +10,8 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 type RegionId = "catalunya" | "cordoba";
 
 const regions: { id: RegionId; coords: [number, number]; nameKey: string }[] = [
-  { id: "catalunya", coords: [1.8, 41.7], nameKey: "landscapes.catalunya.name" },
-  { id: "cordoba", coords: [-64.2, -31.4], nameKey: "landscapes.cordoba.name" },
+  { id: "catalunya", coords: [1.8, 41.7], nameKey: "bioregions.catalunya.name" },
+  { id: "cordoba", coords: [-64.2, -31.4], nameKey: "bioregions.cordoba.name" },
 ];
 
 const OurLandscapes = () => {
@@ -21,10 +21,10 @@ const OurLandscapes = () => {
   const detailKey = `landscapes.${selected}`;
 
   const stats = [
-    { icon: Users, label: t("landscapes.stats.population"), value: t(`${detailKey}.population`) },
-    { icon: Briefcase, label: t("landscapes.stats.economy"), value: t(`${detailKey}.economy`) },
-    { icon: Droplets, label: t("landscapes.stats.watershed"), value: t(`${detailKey}.watershed`) },
-    { icon: Sprout, label: t("landscapes.stats.agriculture"), value: t(`${detailKey}.agriculture`) },
+    { icon: Users, label: t("bioregions.stats.population"), value: t(`${detailKey}.population`) },
+    { icon: Briefcase, label: t("bioregions.stats.economy"), value: t(`${detailKey}.economy`) },
+    { icon: Droplets, label: t("bioregions.stats.watershed"), value: t(`${detailKey}.watershed`) },
+    { icon: Sprout, label: t("bioregions.stats.agriculture"), value: t(`${detailKey}.agriculture`) },
   ];
 
   return (
@@ -35,12 +35,12 @@ const OurLandscapes = () => {
       <section className="pt-32 pb-10 bg-forest text-cream">
         <div className="container mx-auto px-6 max-w-4xl">
           <p className="text-terracotta uppercase tracking-widest text-xs mb-3">
-            {t("landscapes.hero.label")}
+            {t("bioregions.hero.label")}
           </p>
           <h1 className="font-display text-4xl md:text-5xl mb-4">
-            {t("landscapes.hero.title")}
+            {t("bioregions.hero.title")}
           </h1>
-          <p className="text-cream/80 max-w-2xl">{t("landscapes.hero.subtitle")}</p>
+          <p className="text-cream/80 max-w-2xl">{t("bioregions.hero.subtitle")}</p>
         </div>
       </section>
 
@@ -152,7 +152,7 @@ const OurLandscapes = () => {
               <div className="flex items-center gap-2 mb-3">
                 <AlertTriangle className="w-5 h-5 text-terracotta" strokeWidth={1.5} />
                 <h3 className="font-display text-xl text-forest">
-                  {t("landscapes.sections.challenges")}
+                  {t("bioregions.sections.challenges")}
                 </h3>
               </div>
               <ul className="space-y-3">
@@ -168,7 +168,7 @@ const OurLandscapes = () => {
               <div className="flex items-center gap-2 mb-3">
                 <Sprout className="w-5 h-5 text-terracotta" strokeWidth={1.5} />
                 <h3 className="font-display text-xl text-forest">
-                  {t("landscapes.sections.opportunities")}
+                  {t("bioregions.sections.opportunities")}
                 </h3>
               </div>
               <ul className="space-y-3">
@@ -185,7 +185,7 @@ const OurLandscapes = () => {
             <div className="flex items-center gap-2 mb-3">
               <Droplets className="w-5 h-5 text-terracotta" strokeWidth={1.5} />
               <h3 className="font-display text-xl text-forest">
-                {t("landscapes.sections.watershed")}
+                {t("bioregions.sections.watershed")}
               </h3>
             </div>
             <p className="text-earth leading-relaxed">{t(`${detailKey}.watershedDetail`)}</p>
