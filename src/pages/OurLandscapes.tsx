@@ -133,11 +133,26 @@ const OurLandscapes = () => {
           <h2 className="font-display text-3xl md:text-4xl text-forest mb-4">
             {t(`${detailKey}.name`)}
           </h2>
-          <p className="text-earth leading-relaxed max-w-3xl mb-10">
+          <p className="text-earth leading-relaxed max-w-3xl mb-8">
             {t(`${detailKey}.intro`)}
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid sm:grid-cols-2 gap-3 mb-10 max-w-3xl">
+            <div className="border-l-2 border-terracotta pl-4">
+              <p className="text-xs uppercase tracking-wider text-earth">
+                {t("bioregions.pilotLabel")}
+              </p>
+              <p className="text-forest mt-1">{t(`${detailKey}.pilot`)}</p>
+            </div>
+            <div className="border-l-2 border-forest/40 pl-4">
+              <p className="text-xs uppercase tracking-wider text-earth">
+                {t("bioregions.partnersLabel")}
+              </p>
+              <p className="text-forest mt-1">{t(`${detailKey}.partners`)}</p>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {stats.map((s) => (
               <div key={s.label} className="border border-forest/15 p-5 bg-background">
                 <s.icon className="w-6 h-6 text-terracotta mb-3" strokeWidth={1.5} />
@@ -145,6 +160,25 @@ const OurLandscapes = () => {
                 <p className="text-forest mt-1 leading-snug">{s.value}</p>
               </div>
             ))}
+          </div>
+
+          <div className="border border-forest/15 bg-forest text-cream p-6 mb-12">
+            <p className="text-terracotta text-xs uppercase tracking-widest mb-4">
+              {t("bioregions.marketSignalsLabel")}
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { label: t("bioregions.market.abandoned"), value: t(`${detailKey}.market.abandoned`) },
+                { label: t("bioregions.market.age"), value: t(`${detailKey}.market.age`) },
+                { label: t("bioregions.market.turnover"), value: t(`${detailKey}.market.turnover`) },
+                { label: t("bioregions.market.value"), value: t(`${detailKey}.market.value`) },
+              ].map((m) => (
+                <div key={m.label}>
+                  <p className="font-display text-2xl md:text-3xl text-cream">{m.value}</p>
+                  <p className="text-cream/60 text-xs uppercase tracking-wider mt-1">{m.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
