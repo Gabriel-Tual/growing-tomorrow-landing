@@ -12,10 +12,10 @@ const testimonials = [
     photo: noePhoto,
   },
   {
-    name: "Alice MN.",
-    role: "Impact Fund Manager",
-    quote: "Working with Gabriel accelerated our due diligence on regenerative projects. He understands both the farming and finance sides.",
-    initials: "AM",
+    name: "Zvonimir M.",
+    role: "Collaborator",
+    quote: "Gabriel is before all a hard worker. A super innovative person that opens up the spectrum of technical possibilities for any project. Always a pleasure collaborating with him because of his positive spirit and attitude, and a very good sense of humor. Makes working with him easy.",
+    initials: "ZM",
   },
   {
     name: "Andreina R.",
