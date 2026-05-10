@@ -18,7 +18,7 @@ const OurLandscapes = () => {
   const { t } = useLanguage();
   const [selected, setSelected] = useState<RegionId>("catalunya");
 
-  const detailKey = `landscapes.${selected}`;
+  const detailKey = `bioregions.${selected}`;
 
   const stats = [
     { icon: Users, label: t("bioregions.stats.population"), value: t(`${detailKey}.population`) },
