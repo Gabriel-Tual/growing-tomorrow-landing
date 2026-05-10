@@ -1,4 +1,5 @@
-import { Users, Link, Sprout } from "lucide-react";
+import { useState } from "react";
+import { Users, Link, Sprout, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -6,6 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Process = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const steps = [
     {
@@ -49,37 +51,62 @@ const Process = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <div 
-              key={index}
-              className={`relative p-8 bg-cream border border-forest/10 rounded-sm ${step.rotation} hover:rotate-0 transition-transform duration-500`}
-            >
-              <span className="absolute -top-4 -left-4 w-10 h-10 bg-terracotta text-cream flex items-center justify-center font-display text-xl rotate-6">
-                {index + 1}
-              </span>
-              
-              <step.icon className="w-10 h-10 text-forest mb-6" strokeWidth={1.5} />
-              
-              <h3 className="font-display text-2xl text-forest mb-2">
-                {step.title}
-              </h3>
-              <p className="text-terracotta font-medium text-sm mb-4">
-                {step.subtitle}
-              </p>
-              <p className="text-earth leading-relaxed mb-6">
-                {step.description}
-              </p>
-              
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="border-forest text-forest hover:bg-forest hover:text-cream"
-                onClick={() => navigate(step.link)}
+          {steps.map((step, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div 
+                key={index}
+                className={`relative p-8 bg-cream border border-forest/10 rounded-sm ${step.rotation} hover:rotate-0 transition-transform duration-500`}
               >
-                {t("process.knowMore")}
-              </Button>
-            </div>
-          ))}
+                <span className="absolute -top-4 -left-4 w-10 h-10 bg-terracotta text-cream flex items-center justify-center font-display text-xl rotate-6">
+                  {index + 1}
+                </span>
+                
+                <step.icon className="w-10 h-10 text-forest mb-6" strokeWidth={1.5} />
+                
+                <h3 className="font-display text-2xl text-forest mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-terracotta font-medium text-sm mb-4">
+                  {step.subtitle}
+                </p>
+
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="flex items-center justify-between w-full text-left text-forest border-t border-forest/10 pt-3 mb-3 group"
+                  aria-expanded={isOpen}
+                >
+                  <span className="text-sm font-medium">
+                    {isOpen ? t("process.hideDetails") : t("process.showDetails")}
+                  </span>
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen ? "grid-rows-[1fr] opacity-100 mb-6" : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="text-earth leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-forest text-forest hover:bg-forest hover:text-cream"
+                  onClick={() => navigate(step.link)}
+                >
+                  {t("process.knowMore")}
+                </Button>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
