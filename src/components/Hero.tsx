@@ -23,9 +23,6 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-terracotta font-medium tracking-widest uppercase text-sm mb-6 -rotate-1">
-            {t("hero.tagline")}
-          </p>
           
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-cream leading-tight mb-8">
             {t("hero.title1")}
